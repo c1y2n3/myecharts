@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../imges/bgc.jpeg);
+  background-size: cover;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  /* 头部背景 */
+  background-image: url(../imges/微信图片_20231224201731.png);
+  background-size: cover;
+  font-family: "楷体";
+  color: rgb(51, 190, 190);
+
+  /* 字体居中 */
+  text-align: center;
+  line-height: 10vh;
+  font-size: 5vh;
+}
+
+.centent {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  height: 90vh;
+
+}
+
+.centre {
+  flex: 2.3;
+  height: 90vh;
+
+}
+
+.right {
+  height: 90vh;
+  flex: 1;
+}
+
+.leftAndRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+
+/* 左右两边四个盒子 */
+.fourBboxes {
+  height: 43vh;
+  width: 95%;
+}
+
+/* 地图盒子 */
+.map {
+  height: 86vh;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2vh
+}
+
+.all {
+
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(25, 186, 139, 0.17);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #02a6b5;
+    border-top: 2px solid #02a6b5;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #02a6b5;
+    border-top: 2px solid #02a6b5;
+    content: "";
+  }
+
+}
+
+.title {
+  height: 10%;
+  width: 100%;
+  color: #fff;
+  padding-left: 3%;
+  padding-top: 2%;
+  font-weight: 700
+}
+
+.chart {
+  width: 100%;
+  height: 99%;
+
+  padding-top: 0.1vh;
+  padding-bottom: 0.1vh;
+}
+
+.boxtable {
+  height: 88%;
+}
+
+.boxsFourbot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #02a6b5;
+    border-bottom: 2px solid #02a6b5;
+    content: "";
+  }
+}
+
+
+.right-bottom-right {
+  width: 98%;
+  margin-left: 0.63vmin;
+  margin-top: 0.55vmin;
+
+  /* 隐藏溢出内容 */
+
+}
+
+thead {
+
+  background-color: #246b9d;
+}
+
+.right-bottom-right .scroll {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.right-bottom-right table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.right-bottom-right table thead tr th {
+  width: 5vw;
+  border: solid 0.25vw #256fa8;
+  text-align: center;
+
+}
+
+.right-bottom-right table tbody tr td {
+  width: 5vw;
+  height: 10vh;
+  border: solid 0.25vw #256fa8;
+  text-align: center;
+}
