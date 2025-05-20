@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>景区可视化大屏展示</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <header>
+    全国景区可视化分析
+  </header>
+  <div class="centent">
+    <div class="left leftAndRight">
+      <div class="fourBboxes all">
+        <div class="chart" id="line"></div>
+        <div class="boxsFourbot"></div>
+      </div>
+      <div class="fourBboxes all">
+        <div class="chart" id="stock"></div>
+        <div class="boxsFourbot"></div>
+      </div>
+    </div>
+    <div class="centre">
+      <div class="map all">
+        <div class="chart" id="map"></div>
+        <div class="boxsFourbot"></div>
+      </div>
+    </div>
+    <div class="right leftAndRight">
+      <div class="fourBboxes all">
+
+        <div class="title">景区受喜爱程度TOP20</div>
+        <div class="chart boxtable" id="" style="overflow: hidden">
+          <div class="right-bottom-right">
+            <table>
+              <thead>
+                <tr>
+                  <th>排名与级别</th>
+                  <th>景区名称</th>
+                  <th>景区分布位置</th>
+
+
+                </tr>
+              </thead>
+            </table>
+
+            <div style="overflow:hidden;">
+              <div class="scroll">
+
+                <table>
+
+                  <tbody>
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div class="boxsFourbot"></div>
+      </div>
+      <div class="fourBboxes all">
+        <div class="chart" id="pie"></div>
+        <div class="boxsFourbot"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="./js/echarts.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/china.js"></script>
+  <script src="./js/world.js"></script>
+  <script src="./js/echarts-wordcloud.min.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>
